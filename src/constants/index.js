@@ -78,12 +78,12 @@ export const stats = [
   },
   {
     id: "stats-2",
-    title: "Trusted by Company",
+    title: "Trusted Companies",
     value: "230+",
   },
   {
     id: "stats-3",
-    title: "Transaction",
+    title: "Transactions",
     value: "$230M+",
   },
 ];
