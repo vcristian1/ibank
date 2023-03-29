@@ -27,14 +27,6 @@ const ContactUs = () => {
             <div className="justify-between gap-8 md:flex">
                 <motion.div
                  className='mt-10 basis-3/5 md:mt-0 '
-                 initial="hidden"
-                 whileInView="visible"
-                 viewport={{ once: true, amount: 0.5 }}
-                 transition={{ duration: 0.5 }}
-                 variants={{
-                    hidden: { opacity: 0, x: -50 },
-                    visible: { opacity: 1, x: 0 },
-                 }}
                 >
                     <form 
                      action="https://formsubmit.co/09821b6ccaa4f7a4347fa2a6712cb014"
@@ -88,20 +80,6 @@ const ContactUs = () => {
                             SUBMIT
                         </button>                      
                     </form>
-                </motion.div>
-
-                <motion.div
-                    className="relative mt-16 basis-2/5 md:mt-0"
-                    initial="hidden"
-                    whileInView="visible"
-                    viewport={{ once: true, amount: 0.5 }}
-                    transition={{ delay: 0.2, duration: 0.5 }}
-                    variants={{
-                    hidden: { opacity: 0, y: 50 },
-                    visible: { opacity: 1, y: 0 },
-                    }}
-                >
-    
                 </motion.div>
             </div>
         </motion.div>
