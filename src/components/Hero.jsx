@@ -24,8 +24,24 @@ const Hero = () => {
             <GetStarted />
           </div>
         </div>
+       
+        <h1 className="font-poppins font-semibold ss:text-[68px] text-[52px] text-white ss:leading-[100.8px] leading-[75px] w-full">Payment Method</h1>
+        <p className={`${styles.paragraph} ml-2`}>Our team of experts use a methodology to identify the credit cards most likely to fit your needs. We examine annual percentage rates, annual fees.</p>
       </div>
 
+      <div>
+        <img src={robot} alt="billing" className="w-[100%] h-[100%] relative z-[5]"/>
+        {/* gradient start */}
+        <div className="absolute z-[0] w-[40%] h-[35%] top-0 pink__gradient" />
+        <div className="absolute z-[1] w-[80%] h-[80%] rounded-full white__gradient bottom-40" />
+        <div className="absolute z-[0] w-[50%] h-[50%] right-20 bottom-20 blue__gradient" />
+        {/* gradient end */}
+      </div>
+      
+      {/* Get Started Button for Mobile Devices */}
+      <div className={`ss:hidden ${styles.flexCenter}`}>
+        <GetStarted />
+      </div>
     </section>
   )
 }
