@@ -2,8 +2,7 @@ import { features } from "../constants";
 import styles, { layout } from "../style";
 import Button from "./Button";
 
-const FeatureCard = ({ icon, title, content, index }) => {
-
+const FeatureCard = ({ icon, title, content, index }) => (
   <div className={`flex flex-row p-6 rounded-[20px] ${index !== features.length - 1 ? "mb-6" : "mb-0"} feature-card`}>
     <div className={`w-[64px] h-[64px] rounded-full ${styles.flexCenter} bg-dimBlue`}>
       <img src={icon} alt="star" className="w-[50%] h-[50%] object-contain" />
@@ -17,11 +16,9 @@ const FeatureCard = ({ icon, title, content, index }) => {
       </p>
     </div>
   </div>
-
-}
+);
 
 const Business = () =>  (
-
   <section id="features" className="flex md:flex-row flex-col sm:py-16 py-6 md:ml-14 ml-6">
     <div className={`flex-1 ${styles.flexStart} flex-col`}>
       <h2 className="font-poppins font-semibold xs:text-[48px] text-[40px] text-white xs:leading-[76.8px] leading-[66.8px] w-full">
@@ -44,7 +41,6 @@ const Business = () =>  (
         />
       ))}
     </div>
-
   </section>
 );
 
