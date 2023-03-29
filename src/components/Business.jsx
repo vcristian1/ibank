@@ -22,7 +22,7 @@ const FeatureCard = ({ icon, title, content, index }) => (
 const Business = () =>  (
   <section id="features" className="flex md:flex-row flex-col sm:py-16 py-6 md:ml-16 ml-6">
     <motion.div 
-     className={`flex-1 ${styles.flexStart} flex-col`}
+     className={`flex-1 ${styles.flexStart} flex-col mr-4 md:mr-14`}
      initial="hidden"
      whileInView="visible"
      viewport={{ once: true, amount: 0.5 }}
@@ -46,7 +46,7 @@ const Business = () =>  (
     </motion.div>
 
     <motion.div 
-     className={`${layout.sectionImg} flex-col mr-6`}
+     className={`${layout.sectionImg} flex-col mr-6 md:mr-14`}
      initial="hidden"
      whileInView="visible"
      viewport={{ once: true, amount: 0.5 }}

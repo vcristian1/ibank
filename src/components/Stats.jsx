@@ -9,7 +9,7 @@ const Stats = () => {
       {stats.map((stat) => (
         <div 
          key={stat.id} 
-         className={`flex flex-1 justify-start items-center m-3 md:ml-16 ml-6`}
+         className={`flex flex-1 justify-start items-center m-3 md:ml-16 ml-6 md:mr-14`}
         >
           <motion.div
            initial="hidden"
