@@ -57,7 +57,7 @@ const ContactUs = () => {
                         <textarea
                             className={inputStyles}
                             placeholder="MESSAGE"
-                            rows={4}
+                            rows={5}
                             cols={50}
                             {...register("message", {
                             required: true,
